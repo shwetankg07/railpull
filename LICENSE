@@ -1,0 +1,33 @@
+MIT License
+
+Copyright (c) 2026 shwetank gupta
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+Note on the code vs the data it produces:
+
+This MIT license covers the CODE in this repository. It does not cover any data
+the code fetches. Train schedules are retrieved from India's National Train
+Enquiry System (NTES) via an unofficial client; the schedules are public factual
+information, but bulk collection and redistribution may be subject to the
+operator's terms of use. Station coordinates and track geometry are derived from
+OpenStreetMap, (c) OpenStreetMap contributors, licensed under the Open Database
+License (ODbL) — see https://www.openstreetmap.org/copyright. Use responsibly.

@@ -1,0 +1,29 @@
+{
+  "name": "railpull",
+  "version": "1.0.0",
+  "description": "Pull the current Indian Railways timetable from NTES and turn it into clean, analysis-ready data.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "indian-railways",
+    "ntes",
+    "irctc",
+    "train-schedule",
+    "timetable",
+    "railway",
+    "india",
+    "dataset",
+    "open-data",
+    "gtfs",
+    "transit",
+    "geospatial",
+    "scraper"
+  ],
+  "scripts": {
+    "geocode": "node osm/geocode_stations.mjs",
+    "tracks": "node --max-old-space-size=4096 osm/route_tracks.mjs"
+  },
+  "dependencies": {
+    "osm-pbf-parser": "^2.3.0"
+  }
+}

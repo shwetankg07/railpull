@@ -1,0 +1,1002 @@
+[
+ {
+  "code": "SDAH",
+  "name": "Kolkata Sealdah"
+ },
+ {
+  "code": "HWH",
+  "name": "Howrah Jn"
+ },
+ {
+  "code": "KYN",
+  "name": "Kalyan Jn"
+ },
+ {
+  "code": "MSB",
+  "name": "Chennai Beach"
+ },
+ {
+  "code": "BRC",
+  "name": "Vadodara Jn"
+ },
+ {
+  "code": "TBM",
+  "name": "Tambaram"
+ },
+ {
+  "code": "BZA",
+  "name": "Vijayawada Jn"
+ },
+ {
+  "code": "DDJ",
+  "name": "Dum Dum"
+ },
+ {
+  "code": "ST",
+  "name": "Surat"
+ },
+ {
+  "code": "CNB",
+  "name": "Kanpur Central"
+ },
+ {
+  "code": "ET",
+  "name": "Itarsi Jn"
+ },
+ {
+  "code": "MS",
+  "name": "Chennai Egmore"
+ },
+ {
+  "code": "BSL",
+  "name": "Bhusaval Jn"
+ },
+ {
+  "code": "DDU",
+  "name": "Pt.Deen Dayal Upadhyaya Jn."
+ },
+ {
+  "code": "MSF",
+  "name": "Chennai Fort"
+ },
+ {
+  "code": "BNXR",
+  "name": "Bidhan Nagar"
+ },
+ {
+  "code": "BBS",
+  "name": "Bhubaneswar"
+ },
+ {
+  "code": "BWN",
+  "name": "Barddhaman Jn"
+ },
+ {
+  "code": "BDC",
+  "name": "Bandel Jn"
+ },
+ {
+  "code": "NDLS",
+  "name": "New Delhi"
+ },
+ {
+  "code": "PER",
+  "name": "Perambur"
+ },
+ {
+  "code": "KUR",
+  "name": "Khurda Road Jn"
+ },
+ {
+  "code": "PNBE",
+  "name": "Patna Jn"
+ },
+ {
+  "code": "MBM",
+  "name": "Mambalam"
+ },
+ {
+  "code": "KGP",
+  "name": "Kharagpur Jn"
+ },
+ {
+  "code": "VGLJ",
+  "name": "Virangana Lakshmibai Jhansi Jn"
+ },
+ {
+  "code": "GZB",
+  "name": "Ghaziabad"
+ },
+ {
+  "code": "PRYJ",
+  "name": "Prayagraj Jn"
+ },
+ {
+  "code": "LLH",
+  "name": "Liluah"
+ },
+ {
+  "code": "NH",
+  "name": "Naihati Jn"
+ },
+ {
+  "code": "RTM",
+  "name": "Ratlam Jn"
+ },
+ {
+  "code": "LKO",
+  "name": "Lucknow"
+ },
+ {
+  "code": "PUNE",
+  "name": "Pune Jn"
+ },
+ {
+  "code": "GDY",
+  "name": "Guindy"
+ },
+ {
+  "code": "BEQ",
+  "name": "Belur"
+ },
+ {
+  "code": "CGL",
+  "name": "Chengalpattu"
+ },
+ {
+  "code": "MB",
+  "name": "Moradabad"
+ },
+ {
+  "code": "MPK",
+  "name": "Chennai Park"
+ },
+ {
+  "code": "ADI",
+  "name": "Ahmedabad Jn"
+ },
+ {
+  "code": "CMP",
+  "name": "Chromepet"
+ },
+ {
+  "code": "JP",
+  "name": "Jaipur"
+ },
+ {
+  "code": "NGP",
+  "name": "Nagpur"
+ },
+ {
+  "code": "UMB",
+  "name": "Ambala Cant Jn"
+ },
+ {
+  "code": "TLM",
+  "name": "Trisulam"
+ },
+ {
+  "code": "STM",
+  "name": "St Thomas Mount"
+ },
+ {
+  "code": "TBMS",
+  "name": "Tambaram Sanatorium"
+ },
+ {
+  "code": "PV",
+  "name": "Pallavaram"
+ },
+ {
+  "code": "MN",
+  "name": "Minambakkam"
+ },
+ {
+  "code": "PZA",
+  "name": "Palavanthangal"
+ },
+ {
+  "code": "SP",
+  "name": "Saidapet"
+ },
+ {
+  "code": "MKK",
+  "name": "Kodambakam"
+ },
+ {
+  "code": "NBK",
+  "name": "Nungambakkam"
+ },
+ {
+  "code": "MSC",
+  "name": "Chennai Chetpat"
+ },
+ {
+  "code": "GKP",
+  "name": "Gorakhpur Jn"
+ },
+ {
+  "code": "BLN",
+  "name": "Ballygunge Jn"
+ },
+ {
+  "code": "SHE",
+  "name": "Seoraphuli"
+ },
+ {
+  "code": "ASN",
+  "name": "Asansol Jn"
+ },
+ {
+  "code": "BPL",
+  "name": "Bhopal Jn"
+ },
+ {
+  "code": "KPD",
+  "name": "Katpadi Jn"
+ },
+ {
+  "code": "ANND",
+  "name": "Anand Jn"
+ },
+ {
+  "code": "SRP",
+  "name": "Serampore"
+ },
+ {
+  "code": "MTJ",
+  "name": "Mathura Jn"
+ },
+ {
+  "code": "RJY",
+  "name": "Rajamundry"
+ },
+ {
+  "code": "BSB",
+  "name": "Varanasi Jn"
+ },
+ {
+  "code": "DLI",
+  "name": "Old Delhi"
+ },
+ {
+  "code": "VAPI",
+  "name": "Vapi"
+ },
+ {
+  "code": "SC",
+  "name": "Secunderabad Jn"
+ },
+ {
+  "code": "PQS",
+  "name": "Park Circus"
+ },
+ {
+  "code": "CTC",
+  "name": "Cuttack"
+ },
+ {
+  "code": "MMR",
+  "name": "Manmad Jn"
+ },
+ {
+  "code": "JBP",
+  "name": "Jabalpur"
+ },
+ {
+  "code": "KOTA",
+  "name": "Kota Jn"
+ },
+ {
+  "code": "SPR",
+  "name": "Sonarpur Junction"
+ },
+ {
+  "code": "BP",
+  "name": "Barrackpore"
+ },
+ {
+  "code": "VSKP",
+  "name": "Vishakapatnam"
+ },
+ {
+  "code": "BBQ",
+  "name": "Basin Bridge Jn"
+ },
+ {
+  "code": "NLR",
+  "name": "Nellore"
+ },
+ {
+  "code": "OGL",
+  "name": "Ongole"
+ },
+ {
+  "code": "BLY",
+  "name": "Bally"
+ },
+ {
+  "code": "STA",
+  "name": "Satna"
+ },
+ {
+  "code": "AJJ",
+  "name": "Arakkonam"
+ },
+ {
+  "code": "UPA",
+  "name": "Uttarpara"
+ },
+ {
+  "code": "VZM",
+  "name": "Vizianagram Jn"
+ },
+ {
+  "code": "BVI",
+  "name": "Borivali"
+ },
+ {
+  "code": "RIS",
+  "name": "Rishra"
+ },
+ {
+  "code": "KOG",
+  "name": "Konnagar"
+ },
+ {
+  "code": "BINA",
+  "name": "Bina Jn"
+ },
+ {
+  "code": "HMZ",
+  "name": "Hind Motor"
+ },
+ {
+  "code": "NZM",
+  "name": "Delhi H Nizamuddin"
+ },
+ {
+  "code": "VLK",
+  "name": "Villivakkam"
+ },
+ {
+  "code": "GWL",
+  "name": "Gwalior Jn"
+ },
+ {
+  "code": "AVD",
+  "name": "Avadi"
+ },
+ {
+  "code": "LDH",
+  "name": "Ludhiana Jn"
+ },
+ {
+  "code": "ABU",
+  "name": "Ambattur"
+ },
+ {
+  "code": "SRC",
+  "name": "Santragachi Jn"
+ },
+ {
+  "code": "RU",
+  "name": "Renigunta Jn"
+ },
+ {
+  "code": "PCW",
+  "name": "Perambur Carriage Works"
+ },
+ {
+  "code": "JDP",
+  "name": "Jadabpur"
+ },
+ {
+  "code": "BE",
+  "name": "Bareilly"
+ },
+ {
+  "code": "PEW",
+  "name": "Perambur Locomotive Works"
+ },
+ {
+  "code": "R",
+  "name": "Raipur Jn"
+ },
+ {
+  "code": "RHA",
+  "name": "Ranaghat Junction"
+ },
+ {
+  "code": "BGJT",
+  "name": "Bagha Jatin"
+ },
+ {
+  "code": "GIA",
+  "name": "Garia"
+ },
+ {
+  "code": "DHK",
+  "name": "Dhakuria"
+ },
+ {
+  "code": "GAYA",
+  "name": "Gaya Jn"
+ },
+ {
+  "code": "ARA",
+  "name": "Ara"
+ },
+ {
+  "code": "AGC",
+  "name": "Agra Cantt"
+ },
+ {
+  "code": "TMVL",
+  "name": "Tirumullaivayil"
+ },
+ {
+  "code": "JTJ",
+  "name": "Jolarpettai"
+ },
+ {
+  "code": "VJM",
+  "name": "Vyasarpadi Jeeva"
+ },
+ {
+  "code": "KOTR",
+  "name": "Korattur"
+ },
+ {
+  "code": "PVM",
+  "name": "Pattaravkkam"
+ },
+ {
+  "code": "ANNR",
+  "name": "Annanur"
+ },
+ {
+  "code": "SA",
+  "name": "Salem Jn"
+ },
+ {
+  "code": "SPJ",
+  "name": "Samastipur Jn"
+ },
+ {
+  "code": "HJP",
+  "name": "Hajipur Jn"
+ },
+ {
+  "code": "GD",
+  "name": "Gonda Jn"
+ },
+ {
+  "code": "SEP",
+  "name": "Sodpur"
+ },
+ {
+  "code": "GDR",
+  "name": "Gudur Jn"
+ },
+ {
+  "code": "AII",
+  "name": "Ajmer Jn"
+ },
+ {
+  "code": "TCR",
+  "name": "Thrisur"
+ },
+ {
+  "code": "ED",
+  "name": "Erode Jn"
+ },
+ {
+  "code": "KIUL",
+  "name": "Kiul Jn"
+ },
+ {
+  "code": "BLH",
+  "name": "Belgharia"
+ },
+ {
+  "code": "BLS",
+  "name": "Balasore"
+ },
+ {
+  "code": "NRPR",
+  "name": "Narendrapur Halt"
+ },
+ {
+  "code": "KNW",
+  "name": "Khandwa"
+ },
+ {
+  "code": "MFP",
+  "name": "Muzaffarpur Jn"
+ },
+ {
+  "code": "JSME",
+  "name": "Jasidih Jn"
+ },
+ {
+  "code": "CPR",
+  "name": "Chhapra"
+ },
+ {
+  "code": "NGRI",
+  "name": "New Garia"
+ },
+ {
+  "code": "JL",
+  "name": "Jalgaon Jn"
+ },
+ {
+  "code": "KDH",
+  "name": "Khardaha"
+ },
+ {
+  "code": "BJU",
+  "name": "Barauni Jn"
+ },
+ {
+  "code": "TDL",
+  "name": "Tundla Jn"
+ },
+ {
+  "code": "BL",
+  "name": "Valsad"
+ },
+ {
+  "code": "BHC",
+  "name": "Bhadrakh"
+ },
+ {
+  "code": "BAM",
+  "name": "Brahmapur"
+ },
+ {
+  "code": "KTE",
+  "name": "Katni"
+ },
+ {
+  "code": "BPQ",
+  "name": "Balharshah"
+ },
+ {
+  "code": "UJN",
+  "name": "Ujjain Jn"
+ },
+ {
+  "code": "TPJ",
+  "name": "Tiruchirappalli"
+ },
+ {
+  "code": "ND",
+  "name": "Nadiad Jn"
+ },
+ {
+  "code": "SLO",
+  "name": "Samalkot Jn"
+ },
+ {
+  "code": "QLN",
+  "name": "Kollam Jn"
+ },
+ {
+  "code": "AGP",
+  "name": "Agarpara"
+ },
+ {
+  "code": "BXR",
+  "name": "Buxar"
+ },
+ {
+  "code": "DNR",
+  "name": "Danapur"
+ },
+ {
+  "code": "SWM",
+  "name": "Sawai Madhopur"
+ },
+ {
+  "code": "TRL",
+  "name": "Tiruvallur"
+ },
+ {
+  "code": "RE",
+  "name": "Rewari"
+ },
+ {
+  "code": "TGH",
+  "name": "Titagarh"
+ },
+ {
+  "code": "DURG",
+  "name": "Durg"
+ },
+ {
+  "code": "TNA",
+  "name": "Thane"
+ },
+ {
+  "code": "NK",
+  "name": "Nasik Road"
+ },
+ {
+  "code": "SNR",
+  "name": "Shyamnagar"
+ },
+ {
+  "code": "NJP",
+  "name": "New Jalpaiguri"
+ },
+ {
+  "code": "G",
+  "name": "Gondia Jn"
+ },
+ {
+  "code": "HC",
+  "name": "Hindu College"
+ },
+ {
+  "code": "PAB",
+  "name": "Pattabiram"
+ },
+ {
+  "code": "BH",
+  "name": "Bharuch Jn"
+ },
+ {
+  "code": "BSR",
+  "name": "Vasai Road"
+ },
+ {
+  "code": "AK",
+  "name": "Akola Jn"
+ },
+ {
+  "code": "YPR",
+  "name": "Yesvantpur Jn"
+ },
+ {
+  "code": "CBE",
+  "name": "Coimbatore Jn"
+ },
+ {
+  "code": "SBC",
+  "name": "Bangalore City Jn"
+ },
+ {
+  "code": "VM",
+  "name": "Villupuram Jn"
+ },
+ {
+  "code": "KNE",
+  "name": "Kishanganj"
+ },
+ {
+  "code": "GI",
+  "name": "Guduvancheri"
+ },
+ {
+  "code": "PRGL",
+  "name": "Perungulattur"
+ },
+ {
+  "code": "SKL",
+  "name": "Singaperumal Koil"
+ },
+ {
+  "code": "WL",
+  "name": "Warangal"
+ },
+ {
+  "code": "UPM",
+  "name": "Urappakkam"
+ },
+ {
+  "code": "PWU",
+  "name": "Paranur"
+ },
+ {
+  "code": "POTI",
+  "name": "Potheri Halt"
+ },
+ {
+  "code": "MAS",
+  "name": "Chennai Central"
+ },
+ {
+  "code": "PTF",
+  "name": "Palta"
+ },
+ {
+  "code": "IP",
+  "name": "Ichhapur"
+ },
+ {
+  "code": "BST",
+  "name": "Basti"
+ },
+ {
+  "code": "BSP",
+  "name": "Bilaspur Jn"
+ },
+ {
+  "code": "LTT",
+  "name": "Lokmanya Tilak Term"
+ },
+ {
+  "code": "MSH",
+  "name": "Mahesana Jn"
+ },
+ {
+  "code": "DGR",
+  "name": "Durgapur"
+ },
+ {
+  "code": "VDR",
+  "name": "Vandalur"
+ },
+ {
+  "code": "TATA",
+  "name": "Tatanagar Jn"
+ },
+ {
+  "code": "CGR",
+  "name": "Chandan Nagar"
+ },
+ {
+  "code": "MMNK",
+  "name": "Maraimalam Nagar"
+ },
+ {
+  "code": "CTM",
+  "name": "Kattangulattur"
+ },
+ {
+  "code": "BRP",
+  "name": "Baruipur Junction"
+ },
+ {
+  "code": "NAD",
+  "name": "Nagda Jn"
+ },
+ {
+  "code": "DHN",
+  "name": "Dhanbad Jn"
+ },
+ {
+  "code": "KNR",
+  "name": "Kankinara"
+ },
+ {
+  "code": "CNS",
+  "name": "Chuchura"
+ },
+ {
+  "code": "MLDT",
+  "name": "Malda Town"
+ },
+ {
+  "code": "AWY",
+  "name": "Aluva"
+ },
+ {
+  "code": "PGT",
+  "name": "Palakkad"
+ },
+ {
+  "code": "TUP",
+  "name": "Tiruppur"
+ },
+ {
+  "code": "TI",
+  "name": "Tiruninravur"
+ },
+ {
+  "code": "SRE",
+  "name": "Saharanpur"
+ },
+ {
+  "code": "MDP",
+  "name": "Madhupur Jn"
+ },
+ {
+  "code": "DKAE",
+  "name": "Dankuni"
+ },
+ {
+  "code": "SEE",
+  "name": "Sonpur Jn"
+ },
+ {
+  "code": "MAK",
+  "name": "Mallikpur"
+ },
+ {
+  "code": "SBGR",
+  "name": "Subhas Gram"
+ },
+ {
+  "code": "LPI",
+  "name": "Lingampalli"
+ },
+ {
+  "code": "DVD",
+  "name": "Duvvada"
+ },
+ {
+  "code": "KSG",
+  "name": "Kishangarh"
+ },
+ {
+  "code": "KPA",
+  "name": "Kanchrapara"
+ },
+ {
+  "code": "KYI",
+  "name": "Kalyani"
+ },
+ {
+  "code": "VLDI",
+  "name": "Vithalwadi"
+ },
+ {
+  "code": "ULNR",
+  "name": "Ulhasnagar"
+ },
+ {
+  "code": "ABH",
+  "name": "Ambarnath"
+ },
+ {
+  "code": "TPTY",
+  "name": "Tirupati Main"
+ },
+ {
+  "code": "PURI",
+  "name": "Puri"
+ },
+ {
+  "code": "JUC",
+  "name": "Jalandhar City"
+ },
+ {
+  "code": "GTL",
+  "name": "Guntakal Jn"
+ },
+ {
+  "code": "KYJ",
+  "name": "Kayankulam Jn"
+ },
+ {
+  "code": "VEU",
+  "name": "Veppampattu"
+ },
+ {
+  "code": "SVR",
+  "name": "Sevvapet Road"
+ },
+ {
+  "code": "DDC",
+  "name": "Dum Dum Cantt."
+ },
+ {
+  "code": "KIR",
+  "name": "Katihar Jn"
+ },
+ {
+  "code": "EE",
+  "name": "Eluru"
+ },
+ {
+  "code": "ANVT",
+  "name": "Anand Vihar Trm"
+ },
+ {
+  "code": "JAJ",
+  "name": "Jhajha"
+ },
+ {
+  "code": "FL",
+  "name": "Phulera Jn"
+ },
+ {
+  "code": "MMG",
+  "name": "Madhyamgram"
+ },
+ {
+  "code": "BBT",
+  "name": "Birati"
+ },
+ {
+  "code": "JJKR",
+  "name": "Jajpur Keonjhar Road"
+ },
+ {
+  "code": "PSA",
+  "name": "Palasa"
+ },
+ {
+  "code": "PTLR",
+  "name": "Putlur Halt"
+ },
+ {
+  "code": "KCG",
+  "name": "Kacheguda"
+ },
+ {
+  "code": "SRR",
+  "name": "Shoranur Jn"
+ },
+ {
+  "code": "NEC",
+  "name": "Nemilicherry Halt"
+ },
+ {
+  "code": "BDTS",
+  "name": "Mumbai Bandra Terminus"
+ },
+ {
+  "code": "UBL",
+  "name": "Hubli Jn"
+ },
+ {
+  "code": "BT",
+  "name": "Barasat"
+ },
+ {
+  "code": "KGG",
+  "name": "Khagaria Jn"
+ },
+ {
+  "code": "ROU",
+  "name": "Rourkela"
+ },
+ {
+  "code": "TEL",
+  "name": "Tenali Jn"
+ },
+ {
+  "code": "BHR",
+  "name": "Bhadreshwar"
+ },
+ {
+  "code": "BBAE",
+  "name": "Baidyabati"
+ },
+ {
+  "code": "MDU",
+  "name": "Madurai Jn"
+ },
+ {
+  "code": "RKMP",
+  "name": "Rani Kamalapati"
+ },
+ {
+  "code": "BKP",
+  "name": "Bakhtiyarpur Jn"
+ },
+ {
+  "code": "HGY",
+  "name": "Hooghly"
+ },
+ {
+  "code": "MUU",
+  "name": "Mankundu"
+ },
+ {
+  "code": "BTE",
+  "name": "Bharatpur Jn"
+ },
+ {
+  "code": "JGDL",
+  "name": "Jagadal"
+ },
+ {
+  "code": "GOY",
+  "name": "Govindpuri"
+ }
+]
