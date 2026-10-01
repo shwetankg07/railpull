@@ -8,7 +8,8 @@ Reads data/raw/schedules/*.json (produced by ntes/crawl.py) and writes:
                            scheduled arrival/departure, halt, distance
   data/out/stations.csv    every station seen: code + name (coordinates are left
                            blank — fill them with osm/geocode_stations.mjs)
-  data/out/schedules.jsonl one cleaned JSON record per train (for programmatic use)
+  data/out/schedules.jsonl one cleaned JSON record per train (for programmatic use),
+                           including `run_dates`, the exact dates it starts
 
 The useful bit NTES doesn't hand you directly: `runs_days`. NTES returns the list
 of dates a train is scheduled over the coming weeks; we fold those into the set of
@@ -32,9 +33,9 @@ WEEK = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 TYPE_LABEL = {
     "RAJ": "Rajdhani", "SHT": "Shatabdi", "JSH": "Jan Shatabdi", "DRNT": "Duronto",
     "GBR": "Garib Rath", "TEJ": "Tejas", "GT": "Gatimaan",
-    "VNDB": "Vande Bharat", "VNDM": "Vande Bharat Metro", "VNDS": "Vande Bharat Sleeper",
+    "VNDB": "Vande Bharat", "VNDM": "Namo Bharat Rapid Rail", "VNDS": "Vande Bharat Sleeper",
     "SUF": "Superfast", "AMTB": "Amrit Bharat", "SKR": "Sampark Kranti", "HUM": "Humsafar",
-    "ANT": "Antyodaya", "SUV": "Suvidha", "YPR": "Yuva", "PEXP": "Premium Express",
+    "ANT": "Antyodaya", "SUV": "Suvidha", "YPR": "Yuva", "PEXP": "Parcel Express",
     "MEX": "Mail/Express", "EXP": "Express", "TOD": "Special", "TRST": "Tourist", "SPL": "Special",
     "SUB": "Suburban", "PAS": "Passenger", "MEMU": "MEMU", "DEMU": "DEMU", "DMU": "DMU",
     "EMU": "EMU", "MMTS": "MMTS", "TOY": "Toy Train", "": "Express",
@@ -56,6 +57,17 @@ def running_days(sched):
     if len(seen) >= 7 or not seen:
         return "Daily"
     return ",".join(WEEK[i] for i in range(7) if i in seen)
+
+
+def run_dates(sched):
+    """The exact dates the train starts its journey, as sorted ISO strings."""
+    out = set()
+    for d in sched.get("vStartDateList") or []:
+        try:
+            out.add(datetime.strptime(d, "%d-%b-%Y").date().isoformat())
+        except ValueError:
+            continue
+    return sorted(out)
 
 
 def main():
@@ -90,7 +102,7 @@ def main():
         days = running_days(s)
         dist = stops[-1].get("Distance", "")
         trains_w.writerow([
-            no, s.get("TrainName", ""), ttype, TYPE_LABEL.get(ttype, ttype or "Express"),
+            no, s.get("TrainName", "").strip(), ttype, TYPE_LABEL.get(ttype, ttype or "Express"),
             days, s.get("Source", ""), s.get("SourceName", ""),
             s.get("Destination", ""), s.get("DestinationName", ""),
             dist, s.get("TravelTime", ""), len(stops),
@@ -111,8 +123,9 @@ def main():
             })
             n_stops += 1
         jsonl.write(json.dumps({
-            "number": no, "name": s.get("TrainName", ""), "type": ttype,
+            "number": no, "name": s.get("TrainName", "").strip(), "type": ttype,
             "type_label": TYPE_LABEL.get(ttype, ttype or "Express"), "runs_days": days,
+            "run_dates": run_dates(s),
             "source": s.get("SourceName", ""), "destination": s.get("DestinationName", ""),
             "distance_km": dist, "stops": clean_stops,
         }, ensure_ascii=False) + "\n")
