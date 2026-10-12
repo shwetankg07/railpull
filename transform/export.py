@@ -91,7 +91,7 @@ def main():
     n_trains = n_stops = 0
     for f in files:
         try:
-            s = json.loads(f.read_text())
+            s = json.loads(f.read_text(encoding="utf-8"))
         except json.JSONDecodeError:
             continue
         stops = s.get("stations") or []
