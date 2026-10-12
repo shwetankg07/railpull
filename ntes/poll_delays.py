@@ -111,7 +111,7 @@ def publish(trains):
     OUT.parent.mkdir(parents=True, exist_ok=True)
     payload = {"updatedAt": int(time.time()), "source": "ntes-station-boards", "trains": trains}
     tmp = OUT.with_suffix(".tmp")
-    tmp.write_text(json.dumps(payload, separators=(",", ":")))
+    tmp.write_text(json.dumps(payload, separators=(",", ":")), encoding="utf-8")
     os.replace(tmp, OUT)  # atomic — readers never see a half-written file
 
 
@@ -122,7 +122,7 @@ def main():
     ap.add_argument("--loop", action="store_true", help="keep sweeping ~every 5 minutes")
     args = ap.parse_args()
 
-    seed = json.loads(SEED.read_text())
+    seed = json.loads(SEED.read_text(encoding="utf-8"))
     codes = [s["code"] for s in seed[: args.stations]]
     client = NTESClient()
     client.session.request = functools.partial(client.session.request, timeout=(10, 30))
@@ -139,7 +139,7 @@ def main():
         STATUS.write_text(json.dumps({
             "at": datetime.now(IST).isoformat(), "calls": calls, "ok": ok,
             "late": late, "cancelled": canc, "sweepSeconds": dur,
-        }, indent=1))
+        }, indent=1), encoding="utf-8")
         if not args.loop:
             break
         time.sleep(max(10, 300 - (time.time() - t0)))

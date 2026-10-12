@@ -49,9 +49,9 @@ PAUSE = 1.2
 
 
 def status(**kw):
-    d = json.loads(STATUS.read_text()) if STATUS.exists() else {}
+    d = json.loads(STATUS.read_text(encoding="utf-8")) if STATUS.exists() else {}
     d.update(kw, updatedAt=time.strftime("%Y-%m-%d %H:%M:%S"))
-    STATUS.write_text(json.dumps(d, indent=1))
+    STATUS.write_text(json.dumps(d, indent=1), encoding="utf-8")
 
 
 def nap():
@@ -85,7 +85,7 @@ def call(client_fn, *args):
 def discover(client, seed_numbers):
     found = {}
     if NUMBERS.exists():
-        found = dict(json.loads(NUMBERS.read_text()))
+        found = dict(json.loads(NUMBERS.read_text(encoding="utf-8")))
         print(f"resuming discovery over {len(found)} known numbers", flush=True)
     for no in seed_numbers:
         found.setdefault(str(no), {"src": "seed"})
@@ -122,11 +122,11 @@ def discover(client, seed_numbers):
 def _save_numbers(found, done):
     payload = dict(found)
     payload["__prefixes__"] = {"done": sorted(done)}
-    NUMBERS.write_text(json.dumps(payload, ensure_ascii=False))
+    NUMBERS.write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
 
 
 def fetch_schedules(client, numbers):
-    errors = json.loads(ERRORS.read_text()) if ERRORS.exists() else {}
+    errors = json.loads(ERRORS.read_text(encoding="utf-8")) if ERRORS.exists() else {}
     todo = [n for n in sorted(numbers)
             if not n.startswith("__")
             and not (SCHED / f"{n}.json").exists()
@@ -137,17 +137,17 @@ def fetch_schedules(client, numbers):
         r = call(client.schedule, no)
         nap()
         if r and r.get("stations"):
-            (SCHED / f"{no}.json").write_text(json.dumps(r, ensure_ascii=False))
+            (SCHED / f"{no}.json").write_text(json.dumps(r, ensure_ascii=False), encoding="utf-8")
             ok += 1
         else:
             errors[no] = "empty-or-error"
             fail += 1
         if (i + 1) % 100 == 0:
-            ERRORS.write_text(json.dumps(errors, indent=1))
+            ERRORS.write_text(json.dumps(errors, indent=1), encoding="utf-8")
             status(phase="schedules", fetchedThisRun=ok, failedThisRun=fail,
                    remaining=len(todo) - i - 1, schedulesOnDisk=len(list(SCHED.glob("*.json"))))
             print(f"schedules: {i + 1}/{len(todo)} ok={ok} fail={fail}", flush=True)
-    ERRORS.write_text(json.dumps(errors, indent=1))
+    ERRORS.write_text(json.dumps(errors, indent=1), encoding="utf-8")
     status(phase="DONE", schedulesOnDisk=len(list(SCHED.glob("*.json"))), failed=len(errors))
     print("crawl complete", flush=True)
 
@@ -163,7 +163,7 @@ def main():
     SCHED.mkdir(parents=True, exist_ok=True)
     seed_numbers = []
     if args.seed and Path(args.seed).exists():
-        raw = json.loads(Path(args.seed).read_text())
+        raw = json.loads(Path(args.seed).read_text(encoding="utf-8"))
         seed_numbers = raw if isinstance(raw, list) else list(raw.keys())
         print(f"seeded {len(seed_numbers)} extra numbers", flush=True)
 
